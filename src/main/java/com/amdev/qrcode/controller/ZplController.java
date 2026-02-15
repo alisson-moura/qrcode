@@ -4,15 +4,13 @@ import com.amdev.qrcode.dto.ZplToPdfResponse;
 import com.amdev.qrcode.service.ZplServices;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 
 @RestController
 @RequestMapping("/zpl")
+@CrossOrigin(origins = "*")
 public class ZplController {
 
     private final ZplServices zplServices;
