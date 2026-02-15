@@ -15,8 +15,9 @@ RUN $JAVA_HOME/bin/jlink \
 
 FROM alpine:3.19 AS runner
 
-RUN apk add --no-cache ca-certificates && \
-    addgroup -S spring && adduser -S spring -G spring
+RUN apk add --no-cache ca-certificates fontconfig ttf-dejavu
+
+RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 
 ENV JAVA_HOME=/opt/java/openjdk
