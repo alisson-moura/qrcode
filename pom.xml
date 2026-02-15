@@ -64,6 +64,14 @@
             <artifactId>s3</artifactId>
             <version>${aws.sdk.version}</version>
         </dependency>
+
+        <!-- Source: https://mvnrepository.com/artifact/io.github.varunsermaldev/JavaZPL2PDF -->
+        <dependency>
+            <groupId>io.github.varunsermaldev</groupId>
+            <artifactId>JavaZPL2PDF</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
